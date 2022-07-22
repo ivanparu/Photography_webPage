@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Anek Malayalam', sans-serif; }
+
+.nav-item a {
+  color: #11528f !important;
+  margin: 20px; }
+
+.nav-item a:hover {
+  font-size: 40px !important;
+  margin: 10px; }
+
+.textoh3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 200%;
+  padding-bottom: 1rem;
+  color: #11528f; }
+
+.logito {
+  width: 10rem; }
+
+.carousel {
+  padding-bottom: 0.5%; }
+  .carousel .carousel__alto {
+    height: 900px;
+    width: 100%; }
+    @media (max-width: 991px) {
+      .carousel .carousel__alto {
+        height: 550px; } }
+    @media (max-width: 900px) {
+      .carousel .carousel__alto {
+        height: 450px; } }
+    @media (max-width: 757px) {
+      .carousel .carousel__alto {
+        height: 400px; } }
+    @media (max-width: 500px) {
+      .carousel .carousel__alto {
+        height: 300px; } }
+    @media (max-width: 370px) {
+      .carousel .carousel__alto {
+        height: 200px; } }
+
+.ultimos_trabajos h3 {
+  padding-bottom: 1rem; }
+
+.ultimos_trabajos p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.ultimos_trabajos-fotos {
+  width: 80%;
+  min-width: 200px;
+  max-width: 800px; }
+  @media (min-width: 991px) {
+    .ultimos_trabajos-fotos {
+      width: 60%; } }
+
+.fotosm {
+  object-fit: none;
+  object-position: top; }
+  @media (max-width: 991px) {
+    .fotosm {
+      background-size: cover;
+      object-fit: fill; } }
+
+.espacionashe {
+  padding-left: 20%; }
+  @media (max-width: 1212px) {
+    .espacionashe {
+      padding-left: 2%; } }
+
+.direc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.btn {
+  background-color: #11528f; }
+
+#fotografo {
+  width: 80%; }
+
+.padding {
+  margin-top: 9%;
+  margin-bottom: 9%; }
+
+.form {
+  padding-bottom: 5rem;
+  padding-top: 2rem; }
