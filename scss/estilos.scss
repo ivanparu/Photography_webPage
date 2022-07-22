@@ -16,7 +16,8 @@ body {
         margin: 20px;
     }
     a:hover{
-        font-size: 40px !important;
+        transition: 0.5s;
+        font-size: 35px !important;
         margin: 10px;
     }
 
@@ -90,7 +91,7 @@ body {
 }
 
 
-.espacionashe{
+.espacio{
     padding-left: 20%;
     @media (max-width:1212px) {
         padding-left: 2%;
