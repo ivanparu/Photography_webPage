@@ -23,16 +23,36 @@ body {
 
 }
 
+@mixin texto ($text-align, $text-transform,$font-size,$color){
+    text-align: $text-align;
+    text-transform: $text-transform;
+    font-size: $font-size;
+    color: $color;
+}
 
-.textoh3 {
+/* .textoh3 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 200%;
+    font-size: 250%;
     padding-bottom: 1rem;
     color: $color-principal;
 }
+ */
+.textoh3{
+    @include texto(center, uppercase, 250%, $color-principal)
+}
 
+.textoh3{
+    padding-bottom: 1rem;
+}
 
+.textoh2{
+    @include texto(center, uppercase, 270%, $color-principal )
+}
+
+.textoh2{
+    padding-bottom:3rem;
+}
 
 
 
@@ -104,6 +124,13 @@ body {
     align-items: center;
     padding-right:1rem;
     padding-left:1rem;
+    &__img{
+        padding-bottom: 2%;
+    }
+    &__mundo{
+        max-width: 700px;
+        padding-bottom: 2%;
+    }
 }
 
 .btn{
@@ -114,11 +141,16 @@ body {
     width: 80%;
 }
 
-.padding{
-    margin-top: 9%;
-    margin-bottom: 9%;
+
+@mixin padding ($padding-top, $padding-bottom){
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
 }
+
+.padding{
+    @include padding(9%,9%)
+}
+
 .form{
-    padding-bottom: 5rem;
-    padding-top: 2rem;
+    @include padding(5%,5%)
 }

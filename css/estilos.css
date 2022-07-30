@@ -15,12 +15,31 @@ body {
   font-size: 35px !important;
   margin: 10px; }
 
+/* .textoh3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 250%;
+    padding-bottom: 1rem;
+    color: $color-principal;
+}
+ */
 .textoh3 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 200%;
-  padding-bottom: 1rem;
+  font-size: 250%;
   color: #11528f; }
+
+.textoh3 {
+  padding-bottom: 1rem; }
+
+.textoh2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 270%;
+  color: #11528f; }
+
+.textoh2 {
+  padding-bottom: 3rem; }
 
 .logito {
   width: 10rem; }
@@ -81,6 +100,11 @@ body {
   align-items: center;
   padding-right: 1rem;
   padding-left: 1rem; }
+  .direc__img {
+    padding-bottom: 2%; }
+  .direc__mundo {
+    max-width: 700px;
+    padding-bottom: 2%; }
 
 .btn {
   background-color: #11528f; }
@@ -89,9 +113,9 @@ body {
   width: 80%; }
 
 .padding {
-  margin-top: 9%;
-  margin-bottom: 9%; }
+  padding-top: 9%;
+  padding-bottom: 9%; }
 
 .form {
-  padding-bottom: 5rem;
-  padding-top: 2rem; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
