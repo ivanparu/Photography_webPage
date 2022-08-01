@@ -30,14 +30,7 @@ body {
     color: $color;
 }
 
-/* .textoh3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 250%;
-    padding-bottom: 1rem;
-    color: $color-principal;
-}
- */
+
 .textoh3{
     @include texto(center, uppercase, 250%, $color-principal)
 }
@@ -124,6 +117,7 @@ body {
     align-items: center;
     padding-right:1rem;
     padding-left:1rem;
+    font-size: 120%;
     &__img{
         padding-bottom: 2%;
     }

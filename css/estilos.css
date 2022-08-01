@@ -15,14 +15,6 @@ body {
   font-size: 35px !important;
   margin: 10px; }
 
-/* .textoh3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 250%;
-    padding-bottom: 1rem;
-    color: $color-principal;
-}
- */
 .textoh3 {
   text-align: center;
   text-transform: uppercase;
@@ -99,7 +91,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding-right: 1rem;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  font-size: 120%; }
   .direc__img {
     padding-bottom: 2%; }
   .direc__mundo {
