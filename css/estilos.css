@@ -1,3 +1,5 @@
+/*  VARIABLES */
+/*  NORMALIZE */
 * {
   padding: 0;
   margin: 0;
@@ -6,23 +8,21 @@
 body {
   font-family: 'Anek Malayalam', sans-serif; }
 
-.nav-item a {
-  color: #11528f !important;
-  margin: 20px; }
+.btn {
+  background-color: #11528f; }
 
-.nav-item a:hover {
-  transition: 0.5s;
-  font-size: 35px !important;
-  margin: 10px; }
+.textoh2 {
+  padding-bottom: 3rem; }
 
+.textoh3 {
+  padding-bottom: 1rem; }
+
+/*  MIXINS */
 .textoh3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 250%;
   color: #11528f; }
-
-.textoh3 {
-  padding-bottom: 1rem; }
 
 .textoh2 {
   text-align: center;
@@ -30,12 +30,15 @@ body {
   font-size: 270%;
   color: #11528f; }
 
-.textoh2 {
-  padding-bottom: 3rem; }
+.padding {
+  padding-top: 9%;
+  padding-bottom: 9%; }
 
-.logito {
-  width: 10rem; }
+.form {
+  padding-top: 5%;
+  padding-bottom: 5%; }
 
+/*  CAROUSEL */
 .carousel {
   padding-bottom: 0.5%; }
   .carousel .carousel__alto {
@@ -57,6 +60,39 @@ body {
       .carousel .carousel__alto {
         height: 200px; } }
 
+.fotosm {
+  object-fit: none;
+  object-position: top; }
+  @media (max-width: 991px) {
+    .fotosm {
+      background-size: cover;
+      object-fit: fill; } }
+
+/*  HEADRER */
+.nav-item a {
+  color: #11528f !important;
+  margin: 20px; }
+
+.nav-item a:hover {
+  transition: 0.5s;
+  font-size: 35px !important;
+  margin: 10px; }
+
+.logo {
+  width: 10rem; }
+
+.espacio {
+  padding-left: 20%; }
+  @media (max-width: 1212px) {
+    .espacio {
+      padding-left: 2%; } }
+
+/*  ACERCA DE MI */
+#fotografo {
+  width: 80%;
+  padding-bottom: 4%; }
+
+/*  ULTIMOS TRABAJOD */
 .ultimos_trabajos h3 {
   padding-bottom: 1rem; }
 
@@ -72,20 +108,6 @@ body {
     .ultimos_trabajos-fotos {
       width: 60%; } }
 
-.fotosm {
-  object-fit: none;
-  object-position: top; }
-  @media (max-width: 991px) {
-    .fotosm {
-      background-size: cover;
-      object-fit: fill; } }
-
-.espacio {
-  padding-left: 20%; }
-  @media (max-width: 1212px) {
-    .espacio {
-      padding-left: 2%; } }
-
 .direc {
   display: flex;
   flex-direction: column;
@@ -98,20 +120,6 @@ body {
   .direc__mundo {
     max-width: 700px;
     padding-bottom: 2%; }
-
-.btn {
-  background-color: #11528f; }
-
-#fotografo {
-  width: 80%; }
-
-.padding {
-  padding-top: 9%;
-  padding-bottom: 9%; }
-
-.form {
-  padding-top: 5%;
-  padding-bottom: 5%; }
 
 .separacion {
   padding-top: 2%;

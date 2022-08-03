@@ -1,159 +1,27 @@
-@import "variables";
+     /*  VARIABLES */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import "./misc/variables";
 
-body {
-    font-family: 'Anek Malayalam', sans-serif;
-}
+     /*  NORMALIZE */
 
-.nav-item{
-    a{
-        color: $color-principal !important;
-        margin: 20px;
-    }
-    a:hover{
-        transition: 0.5s;
-        font-size: 35px !important;
-        margin: 10px;
-    }
+@import "./misc/normalize";
 
-}
+     /*  MIXINS */
 
-@mixin texto ($text-align, $text-transform,$font-size,$color){
-    text-align: $text-align;
-    text-transform: $text-transform;
-    font-size: $font-size;
-    color: $color;
-}
+@import "./misc/mixins";
 
+     /*  CAROUSEL */
 
-.textoh3{
-    @include texto(center, uppercase, 250%, $color-principal)
-}
+@import "./partials/carousel";
 
-.textoh3{
-    padding-bottom: 1rem;
-}
+     /*  HEADRER */
 
-.textoh2{
-    @include texto(center, uppercase, 270%, $color-principal )
-}
+@import "./partials/header";
 
-.textoh2{
-    padding-bottom:3rem;
-}
+     /*  ACERCA DE MI */
 
+@import "./views/acercademi";
+  
+     /*  ULTIMOS TRABAJOD */
 
-
-.logito{
-    width: 10rem;
-}
-
-.carousel{
-    padding-bottom: 0.5%;
-    .carousel__alto{
-        height: 900px;
-        width: 100%;
-        @media (max-width:991px) {
-            height: 550px;
-        }
-        @media (max-width:900px) {
-            height: 450px;
-        }
-        @media (max-width:757px) {
-            height: 400px;
-        }
-        @media (max-width:500px) {
-            height: 300px;
-        }
-        @media (max-width:370px) {
-            height: 200px;
-        }
-    }
-}
-
-.ultimos_trabajos{
-    h3{
-        padding-bottom: 1rem;
-    }
-    p{
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-    &-fotos{
-        width: 80%;
-        min-width: 200px;
-        max-width: 800px;
-        @media (min-width:991px) {
-            width: 60%;
-        }
-    }
-}
-
-.fotosm{
-    object-fit: none;
-    object-position: top;
-    @media (max-width:991px) {
-        background-size: cover;
-        object-fit:fill;
-    }
-}
-
-
-.espacio{
-    padding-left: 20%;
-    @media (max-width:1212px) {
-        padding-left: 2%;
-    }
-}
-
-.direc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right:1rem;
-    padding-left:1rem;
-    font-size: 120%;
-    &__img{
-        padding-bottom: 2%;
-    }
-    &__mundo{
-        max-width: 700px;
-        padding-bottom: 2%;
-    }
-}
-
-.btn{
-    background-color: $color-principal;
-}
-
-#fotografo{
-    width: 80%;
-}
-
-
-@mixin padding ($padding-top, $padding-bottom){
-    padding-top: $padding-top;
-    padding-bottom: $padding-bottom;
-}
-
-.padding{
-    @include padding(9%,9%)
-}
-
-.form{
-    @include padding(5%,5%)
-}
-
-.separacion{
-    padding-top: 2%;
-    padding-bottom: 1%;
-
-    p{
-        padding-top: 2%;
-    }
-}
+@import "./views/ultimostrabajos";

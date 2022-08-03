@@ -1,0 +1,28 @@
+@mixin texto ($text-align, $text-transform,$font-size,$color){
+    text-align: $text-align;
+    text-transform: $text-transform;
+    font-size: $font-size;
+    color: $color;
+}
+
+
+.textoh3{
+    @include texto(center, uppercase, 250%, $color-principal)
+}
+
+.textoh2{
+    @include texto(center, uppercase, 270%, $color-principal )
+}
+
+@mixin padding ($padding-top, $padding-bottom){
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+.padding{
+    @include padding(9%,9%)
+}
+
+.form{
+    @include padding(5%,5%)
+}
