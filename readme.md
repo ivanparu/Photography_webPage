@@ -21,4 +21,4 @@ This project is a photography webpage designed to showcase creative work in an e
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ivanparu/ivan-parunov-photography.git
+   git clone https://github.com/ivanparu/Photography_webPage.git
